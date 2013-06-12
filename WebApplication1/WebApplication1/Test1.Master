@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Test1.master.cs" Inherits="WebApplication1.Test1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Hello MasterPage</title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <p>I love my job.</p>
+        <div style="background-color:#cccccc; height: 30px; text-align: left;">
+            <asp:ContentPlaceHolder ID="Top" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <div style="text-align: left;">
+            <asp:ContentPlaceHolder ID="Main" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    <div style="height: 30px; text-align: center;">
+        Copyright (c) 2013
+    </div>
+        
+    </form>
+</body>
+</html>
